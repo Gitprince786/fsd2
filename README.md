@@ -13,11 +13,10 @@ The repository currently includes:
 
 - exp 1.1/ - First experiment project
 - exp 1.2/ - Second experiment project with a Vite + React frontend
-- package.json - Root workspace metadata
 
 ## Getting Started
 
-To run the Experiment 1.2 app locally:
+To run the Experiment app locally:
 
 1. Open the project folder:
    ```bash
