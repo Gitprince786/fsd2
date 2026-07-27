@@ -1,16 +1,53 @@
 # FSD 2 Repository
 
-This repository contains all the experiments performed as part of the FSD 2 coursework.
+This repository contains the coursework experiments completed for Full Stack Development 2. It is organized by experiment folders so each project remains easy to review, run, and update.
 
-## Purpose
+## Overview
 
-The goal of this repo is to keep all experiment projects organized in one place for easy access, review, and sharing.
+The repository currently includes:
 
-## Structure
+- Experiment 1.1: a React-based post composer application
+- Experiment 1.2: a Redux Toolkit-powered content workspace UI for managing posts
 
-- exp 1.1/ - Contains the first experiment project
-  - post-composer-app/ - The React/Vite application for the experiment
+## Project Structure
+
+- exp 1.1/ - First experiment project
+- exp 1.2/ - Second experiment project with a Vite + React frontend
+- package.json - Root workspace metadata
+
+## Getting Started
+
+To run the Experiment 1.2 app locally:
+
+1. Open the project folder:
+   ```bash
+   cd "exp 1.2"
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open the local URL shown by Vite in your browser.
+
+## Available Scripts
+
+Inside the Experiment 1.2 folder, you can use:
+
+- `npm run dev` - start the development server
+- `npm run build` - build the project for production
+- `npm run preview` - preview the production build
+
+## Technologies Used
+
+- React
+- Vite
+- Redux Toolkit
+- JavaScript / JSX
 
 ## Notes
 
-Each experiment is stored in its own folder so the projects remain easy to manage and update.
+Each experiment is stored in its own folder so the projects remain organized and easy to manage.
