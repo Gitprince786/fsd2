@@ -1,22 +1,22 @@
 # FSD 2 Repository
 
-This repository contains the coursework experiments completed for Full Stack Development 2. It is organized by experiment folders so each project remains easy to review, run, and update.
+This repository contains the coursework projects completed for Full Stack Development 2. The work is organized by experiment folders so each app stays easy to review, run, and update.
 
 ## Overview
 
 The repository currently includes:
 
 - Experiment 1.1: a React-based post composer application
-- Experiment 1.2: a Redux Toolkit-powered content workspace UI for managing posts
+- Experiment 1.3: a role-based authentication web project
 
 ## Project Structure
 
 - exp 1.1/ - First experiment project
-- exp 1.2/ - Second experiment project with a Vite + React frontend
+- exp 1.3/ - Authentication project with protected routes and role-based access
 
 ## Getting Started
 
-To run the Experiment app locally:
+### Run Experiment 1.2
 
 1. Open the project folder:
    ```bash
@@ -32,9 +32,24 @@ To run the Experiment app locally:
    ```
 4. Open the local URL shown by Vite in your browser.
 
+### Run Experiment 1.3
+
+1. Open the project folder:
+   ```bash
+   cd "exp 1.3/RBAC_Authentication_Web_Project"
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
 ## Available Scripts
 
-Inside the Experiment 1.2 folder, you can use:
+Inside the project folders, you can use:
 
 - `npm run dev` - start the development server
 - `npm run build` - build the project for production
@@ -46,6 +61,7 @@ Inside the Experiment 1.2 folder, you can use:
 - Vite
 - Redux Toolkit
 - JavaScript / JSX
+- React Router
 
 ## Notes
 
