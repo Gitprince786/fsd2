@@ -1,24 +1,20 @@
-# Role-Based Authentication & Route Protection
+# RBAC Authentication Web Project
 
-A React + Vite project demonstrating JWT Authentication, Role-Based Access Control (RBAC), Protected Routes, Axios Interceptors, and Route Guards.
+A React + Vite application demonstrating role-based access control, protected routes, and JWT-style authentication handling in the frontend.
 
----
+## Overview
+
+This project showcases how a web app can restrict access based on a user's role. Different demo accounts can log in to view pages that are allowed for their role, while unauthorized users are redirected to an access-denied page.
 
 ## Features
 
-- JWT Authentication
-- Role-Based Access Control (Admin, Editor, Viewer)
-- Protected Routes
-- Role-Based Routes
-- React Context API
-- Axios Request Interceptor
-- Axios Response Interceptor
-- Refresh Token Simulation
-- Fake Backend
-- Modern Responsive UI
-- React Router DOM
-
----
+- Login flow with demo credentials
+- Token-based authentication simulation
+- Protected routes for authenticated users
+- Role-based route guards for Admin, Editor, and Viewer
+- Responsive UI with navbar and sidebar
+- Fake backend for authentication and authorization logic
+- Axios-based service layer
 
 ## Tech Stack
 
@@ -26,21 +22,18 @@ A React + Vite project demonstrating JWT Authentication, Role-Based Access Contr
 - Vite
 - React Router DOM
 - Axios
-- JavaScript (ES6)
-- CSS3
-
----
+- JavaScript
+- CSS
 
 ## Project Structure
 
-```
-role-auth-app
-│
+```text
+RBAC_Authentication_Web_Project/
 ├── public/
-│
 ├── src/
 │   ├── components/
 │   ├── context/
+│   ├── hooks/
 │   ├── pages/
 │   ├── routes/
 │   ├── services/
@@ -48,150 +41,72 @@ role-auth-app
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
-│
+├── index.html
 ├── package.json
 ├── vite.config.js
-├── index.html
 └── README.md
 ```
 
----
-
 ## Installation
 
-Clone the project
-
-```bash
-git clone <repository-url>
-```
-
-Move into the project folder
-
-```bash
-cd role-auth-app
-```
-
-Install dependencies
+From the project folder, run:
 
 ```bash
 npm install
 ```
 
-Start the development server
+## Run the App
+
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open your browser
+Then open:
 
-```
-http://localhost:5173
+```text
+http://localhost:5173/
 ```
 
----
+If port 5173 is busy, Vite will automatically choose another available port.
 
 ## Demo Credentials
 
 ### Admin
-
-```
-Username : admin
-Password : admin123
-```
+- Username: admin
+- Password: admin123
 
 ### Editor
-
-```
-Username : editor
-Password : editor123
-```
+- Username: editor
+- Password: editor123
 
 ### Viewer
+- Username: viewer
+- Password: viewer123
 
-```
-Username : viewer
-Password : viewer123
-```
+## How It Works
 
----
+1. The user logs in with a demo account.
+2. A token is stored locally in the browser.
+3. Protected routes check whether the user is authenticated.
+4. Role-based guards verify whether the user has permission to access a page.
+5. Unauthorized access is redirected to the access-denied screen.
 
-## Project Modules
+## Roles
 
-- Login
-- Dashboard
-- Admin Panel
-- Editor Panel
-- Viewer Panel
-- Protected Route
-- Role Route
-- Navbar
-- Sidebar
-- Logout
-- JWT Token
-- Axios Interceptors
-
----
-
-## Authentication Flow
-
-```
-Login
-   │
-   ▼
-JWT Token Generated
-   │
-   ▼
-Token Stored in LocalStorage
-   │
-   ▼
-Protected Route Check
-   │
-   ▼
-Role Verification
-   │
-   ▼
-Dashboard
-```
-
----
-
-## User Roles
-
-### Admin
-
-- Manage Users
-- View Reports
-- Create Users
-- Delete Users
-
-### Editor
-
-- Create Posts
-- Edit Posts
-- Delete Own Posts
-
-### Viewer
-
-- Read Articles
-- View Posts
-
----
+- Admin: full access to protected and admin-only pages
+- Editor: access to editing-related pages
+- Viewer: read-only access
 
 ## Future Improvements
 
-- Real Backend Integration
-- MongoDB
-- Express.js API
-- JWT from Backend
-- Password Hashing
-- Refresh Token API
-- Dark Mode
-- User Profile
-- Admin Analytics
-
----
+- Connect to a real backend API
+- Add refresh-token support
+- Improve security and storage handling
+- Add more role-based features
+- Enhance the UI and accessibility
 
 ## Author
 
-Developed using React + Vite for learning Role-Based Authentication and Route Protection.
+Built as a frontend practice project for learning RBAC and route protection with React and Vite.
