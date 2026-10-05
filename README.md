@@ -12,6 +12,8 @@ The repository currently includes:
 - Experiment 1.2: a Redux Toolkit-powered posts workspace UI
 - Experiment 1.3: a role-based authentication web project
 - Experiment 1.4: a calendar/event management app built with React and Vite
+- Experiment 1.5: a post management application
+- Experiment 1.6: a student task manager with a Spring Boot backend and React frontend
 
 ## Project Structure
 
@@ -19,6 +21,8 @@ The repository currently includes:
 - exp 1.2/ - Vite + React frontend with Redux Toolkit
 - exp 1.3/ - Authentication project with protected routes and role-based access
 - exp 1.4/ - Calendar app with event handling and UI components
+- exp 1.5/ - Post management application
+- exp 1.6/ - Student task manager with pagination, caching, and query optimization
 
 ## Getting Started
 
